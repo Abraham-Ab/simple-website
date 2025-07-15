@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">School Portal</h1>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#faculty" class="nav-link">Faculty</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1: Home/Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Our School</h1>
+            <p class="hero-subtitle">Excellence in Education Since 1950</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Section 2: About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Our School</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Our school has been dedicated to providing quality education for over 70 years. We foster a learning environment that encourages creativity, critical thinking, and personal growth.</p>
+                    <p>With modern facilities and experienced faculty, we prepare students for success in their academic and professional careers.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Students</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Teachers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>25+</h3>
+                        <p>Subjects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2 class="section-title">Our Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>Mathematics</h3>
+                    <p>Advanced mathematics including algebra, geometry, and calculus.</p>
+                    <button class="course-btn" onclick="showCourseInfo('Math')">View Details</button>
+                </div>
+                <div class="course-card">
+                    <h3>Science</h3>
+                    <p>Physics, Chemistry, and Biology with hands-on laboratory experience.</p>
+                    <button class="course-btn" onclick="showCourseInfo('Science')">View Details</button>
+                </div>
+                <div class="course-card">
+                    <h3>Literature</h3>
+                    <p>English literature and creative writing to enhance communication skills.</p>
+                    <button class="course-btn" onclick="showCourseInfo('Literature')">View Details</button>
+                </div>
+                <div class="course-card">
+                    <h3>History</h3>
+                    <p>World history and social studies to understand our past and present.</p>
+                    <button class="course-btn" onclick="showCourseInfo('History')">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Faculty Section -->
+    <section id="faculty" class="faculty-section">
+        <div class="container">
+            <h2 class="section-title">Our Faculty</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-image">👨‍🏫</div>
+                    <h3>Dr. John Smith</h3>
+                    <p class="faculty-title">Principal</p>
+                    <p>20+ years of educational leadership experience.</p>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-image">👩‍🏫</div>
+                    <h3>Ms. Sarah Johnson</h3>
+                    <p class="faculty-title">Mathematics Teacher</p>
+                    <p>Expert in advanced mathematics and problem-solving.</p>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-image">👨‍🔬</div>
+                    <h3>Dr. Michael Brown</h3>
+                    <p class="faculty-title">Science Teacher</p>
+                    <p>PhD in Physics with research background.</p>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-image">👩‍💼</div>
+                    <h3>Ms. Emily Davis</h3>
+                    <p class="faculty-title">Literature Teacher</p>
+                    <p>Published author and literature enthusiast.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-timeline">
+                <div class="event-item">
+                    <div class="event-date">Aug 15</div>
+                    <div class="event-content">
+                        <h3>Back to School Day</h3>
+                        <p>Welcome ceremony and orientation for new students.</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">Sep 10</div>
+                    <div class="event-content">
+                        <h3>Science Fair</h3>
+                        <p>Annual science exhibition showcasing student projects.</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">Oct 20</div>
+                    <div class="event-content">
+                        <h3>Sports Day</h3>
+                        <p>Inter-house sports competition and athletic events.</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">Nov 25</div>
+                    <div class="event-content">
+                        <h3>Cultural Festival</h3>
+                        <p>Celebration of arts, music, and cultural diversity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Education Street<br>Learning City, LC 12345</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p>info@ourschool.edu</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕒 Hours</h3>
+                        <p>Mon-Fri: 8:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Our School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
